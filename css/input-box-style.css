@@ -3,18 +3,19 @@
   width: 100%;
   justify-content: center;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .input-box-login{
   background-color: var(--bg-color-ternary);
   border: none;
-  cursor: pointer;
+  cursor: text;
   outline: none;
   border-radius: 3px;
-  width: 100%;
   height: 64px;
-  padding-left: 40px;
-  font-size: 1.4rem;
+  padding-left: 35px;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.3s;
 }
 
 .label-box-login{
@@ -22,6 +23,17 @@
   font-size: 1.2rem;
   left: 40px;
   color: var(--secondary-color);
-  cursor: pointer;
+  cursor: text;
   text-transform: uppercase;
+  transition: ease-in-out 0.5s;
 }
+.input-box-login:focus{
+  border: 3px solid var(--ternary-color);
+}
+
+.input-box-login:focus ~ .label-box-login,
+.input-box-login:valid ~ .label-box-login{
+  transform: translateY(-45px);
+  font-size: 1rem;
+}
+

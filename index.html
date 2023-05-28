@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/chekbox-style.css">
   <link rel="stylesheet" href="css/button-login-style.css">
   <link rel="stylesheet" href="css/input-box-style.css">
+  <script src="js/input-box.js"></script>
   <title>Página de Login</title>
 </head>
 <body>
@@ -16,18 +17,18 @@
     <form action="" class="flex-container-column">
       <h2>login</h2>
       <div class="container-input-login flex-container-column">
+        <input class="input-box-login" type="text" name="email" id="email" required>
         <label class="label-box-login" for="email">Email</label>
-        <input class="input-box-login" type="email" name="email" id="email">
       </div>
       <div class="container-input-login flex-container-column">
+        <input class="input-box-login" type="password" name="password" id="password" required>
         <label class="label-box-login" for="password">Password</label>
-        <input class="input-box-login" type="password" name="password" id="password">
       </div>
       <div class="container-remember">
         <input type="checkbox" name="remember" id="remember">
         <label for="remember">Remember me</label>
       </div>
-      <input class="button-login" type="button" value="Login">
+      <input class="button-login" type="submit" value="Login">
     </form>
    </div>
   </div>

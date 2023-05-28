@@ -33,7 +33,8 @@ body{
   justify-content: center;
 }
 .container-login{
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
   padding-bottom: 90px;
   padding-top: 50px;
 }
@@ -43,7 +44,7 @@ form{
 }
 h2{
   font-size: 2.3rem;
-  color: #403866;
+  color: var(--primary-color);
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
