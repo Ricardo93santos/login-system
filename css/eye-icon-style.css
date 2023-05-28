@@ -1,0 +1,14 @@
+.eye-icon {
+  color: var(--ternary-color);
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+#close-eye {
+  display: none;
+}
+
+#open-eye{
+  display: block;
+}
