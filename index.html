@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/chekbox-style.css">
   <link rel="stylesheet" href="css/button-login-style.css">
   <link rel="stylesheet" href="css/input-box-style.css">
-  <script src="js/input-box.js"></script>
+  <link rel="stylesheet" href="css/eye-icon-style.css">
+  <script src="https://kit.fontawesome.com/80b6af24ef.js" crossorigin="anonymous"></script>
+  <script async src="js/eye-icon.js"></script>
   <title>Página de Login</title>
 </head>
 <body>
@@ -23,6 +25,10 @@
       <div class="container-input-login flex-container-column">
         <input class="input-box-login" type="password" name="password" id="password" required>
         <label class="label-box-login" for="password">Password</label>
+        <div class="eye-icon">
+          <i class="fa-regular fa-eye-slash" id="close-eye"></i>
+          <i class="fa-regular fa-eye" id="open-eye"></i>
+        </div>
       </div>
       <div class="container-remember">
         <input type="checkbox" name="remember" id="remember">
