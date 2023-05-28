@@ -1,0 +1,14 @@
+.button-login{
+  border: none;
+  border-radius: 3px;
+  background-color: var(--bg-color-secondary);
+  color: var(--fourth-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  padding: 23px;
+  text-transform: uppercase;
+}
+.button-login:hover{
+  background-color: var(--bg-color-fourth);
+}

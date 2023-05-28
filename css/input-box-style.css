@@ -1,0 +1,39 @@
+.container-input-login{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.input-box-login{
+  background-color: var(--bg-color-ternary);
+  border: none;
+  cursor: text;
+  outline: none;
+  border-radius: 3px;
+  height: 64px;
+  padding-left: 35px;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.3s;
+}
+
+.label-box-login{
+  position: absolute;
+  font-size: 1.2rem;
+  left: 40px;
+  color: var(--secondary-color);
+  cursor: text;
+  text-transform: uppercase;
+  transition: ease-in-out 0.5s;
+}
+.input-box-login:focus{
+  border: 3px solid var(--ternary-color);
+}
+
+.input-box-login:focus ~ .label-box-login,
+.input-box-login:valid ~ .label-box-login{
+  transform: translateY(-45px);
+  font-size: 1rem;
+}
+

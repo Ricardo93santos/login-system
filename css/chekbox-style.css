@@ -1,0 +1,51 @@
+.container-remember{
+  padding-bottom: 15px;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+.container-remember input[type="checkbox"] {
+  display: none;
+}
+
+.container-remember label{
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.container-remember label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--ternary-color);
+  background-color: var(--bg-color-primary);
+  border-radius: 3px;
+}
+
+.container-remember input[type="checkbox"]:checked + label::before {
+  background-color: var(--bg-color-secondary);
+  border-color: var(--ternary-color);
+}
+
+.container-remember label::after {
+  content: "\2713";
+  position: absolute;
+  top: 0.6px;
+  left: 4px;
+  color: #fff;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.container-remember input[type="checkbox"]:checked + label::after {
+  visibility: visible;
+}
+
+.container-remember input[type="checkbox"]:checked + label {
+  color: var(--ternary-color);
+}
